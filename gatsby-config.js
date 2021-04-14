@@ -128,3 +128,16 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+// gatsby-config.js
+module.exports = {
+  // ... other stuff
+  plugins: [
+    // ... other plugins
+    {
+      resolve: `gatsby-theme-web-monetization`,
+      options: {
+        paymentPointer: "$wallet.example.com/eka" // Your wallet's payment pointer
+      },
+    },
+  ]
+}
